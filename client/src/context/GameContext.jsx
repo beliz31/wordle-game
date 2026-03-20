@@ -166,7 +166,7 @@ export function GameProvider({ children }) {
   useEffect(() => {
     const serverUrl = window.location.hostname === "localhost"
       ? "http://localhost:3001"
-      : window.location.origin;
+      : : "https://wordle-game-production.up.railway.app";
     const socket = io(serverUrl, {
       autoConnect: true,
       reconnection: true,
